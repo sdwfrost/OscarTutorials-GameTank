@@ -1,0 +1,5 @@
+# Build artifacts (keep .gtr ROM files)
+*.asm
+*.int
+*.lbl
+*.map
