@@ -4,6 +4,8 @@ Educational tutorials for the [GameTank](https://gametank.zone) 8-bit game conso
 
 These are ports of [OscarTutorials](https://github.com/drmortalwombat/OscarTutorials) — a set of C64-targeted tutorials by [@drmortalwombat](https://github.com/drmortalwombat) — adapted for the GameTank's framebuffer-based hardware (no text mode, no VIC/SID chips, hardware blitter instead of sprites).
 
+> **Note:** Building these tutorials requires the [`gametank-target`](https://github.com/sdwfrost/oscar64/tree/gametank-target) branch of Oscar64, which adds GameTank as a first-class compiler target (`-tm=gametank`). Pre-built `.gtr` ROM files are included in each tutorial directory for convenience.
+
 ## Tutorials
 
 | # | Directory | Original | Concept |
