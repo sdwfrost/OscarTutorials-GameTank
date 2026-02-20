@@ -22,8 +22,7 @@ static byte maze[GRID_W * GRID_H];
 static const int bdir[4] = {1, GRID_W, -1, -GRID_W};
 
 // Simple 16-bit LFSR for pseudo-random numbers
-// NOTE: must NOT initialize here — oscar64 puts initialized vars in ROM.
-static unsigned lfsr_state;
+static unsigned lfsr_state = 0xACE1;
 
 static byte maze_rand(void)
 {
@@ -124,8 +123,6 @@ static void maze_draw(void)
 int main(void)
 {
 	gt_init();
-
-	lfsr_state = 0xACE1;
 
 	for (;;)
 	{
